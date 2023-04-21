@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.hdfc.ems.entity.Employee;
+import com.hdfc.ems.exception.EmpNotFound;
 import com.hdfc.ems.repository.IEmployeeRepository;
 
 @Service
@@ -18,8 +19,10 @@ public class EmployeeServiceImpl implements IEmployeeService {
 	IEmployeeRepository emprepo;
 	
 	@Override
-	public Employee getEmployee(long id) {
-		
+	public Employee getEmployee(long id) throws EmpNotFound {
+		if(!emprepo.existsById(id)) {
+			throw new EmpNotFound(" Invalid EmployeeID");
+		}
 		return emprepo.findById(id).orElse(null);
 	}
 
