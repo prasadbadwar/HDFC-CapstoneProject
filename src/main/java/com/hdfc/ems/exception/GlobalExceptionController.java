@@ -1,11 +1,8 @@
 /* =========================
-  * @Author : Er.Prasad B.Badwar.
-  * 
-  * @Date : 05/04/2023
-  * 
-  * @Description : This class is created for handling Global Exceptions.
-  * ==========================
-  * */
+ @Author : Er.Prasad B.Badwar.
+ @Date : 21/04/2023
+ @Description : This class is created for handling Global Exceptions.
+*===========================*/
 package com.hdfc.ems.exception;
 
 import org.springframework.http.HttpStatus;
