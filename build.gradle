@@ -32,6 +32,9 @@ dependencies {
 	//logger dependency
 	// https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
 	implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.17.2'
+	// https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api
+	implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.17.2'
+	
 	
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
