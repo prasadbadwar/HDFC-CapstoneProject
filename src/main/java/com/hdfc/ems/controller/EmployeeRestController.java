@@ -1,5 +1,6 @@
 package com.hdfc.ems.controller;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,8 +18,11 @@ public class EmployeeRestController {
 	@Autowired
 	IEmployeeService service;
 	
+	private static final Logger log=Logger.getLogger(EmployeeRestController.class);
+
 	@GetMapping("/findemployee/{id}")
 	public Employee getEmployee(@PathVariable long id) throws EmpNotFound {
+		log.info("Getmapping called");
 		return service.getEmployee(id);
 	}
 }
