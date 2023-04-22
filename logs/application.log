@@ -4,3 +4,5 @@
 22-04-2023 12:10:28 EmployeeServiceImpl.java ERROR [http-nio-9191-exec-3] service.EmployeeServiceImpl 28 - Invalid EmployeeID
 22-04-2023 12:11:51 EmployeeRestController.java INFO [http-nio-9191-exec-5] controller.EmployeeRestController 25 - Getmapping called
 22-04-2023 12:11:51 EmployeeServiceImpl.java INFO [http-nio-9191-exec-5] service.EmployeeServiceImpl 31 - Employee Details Shown successfully!
+22-04-2023 12:55:31 EmployeeRestController.java INFO [http-nio-9191-exec-1] controller.EmployeeRestController 25 - Getmapping called
+22-04-2023 12:55:31 EmployeeServiceImpl.java INFO [http-nio-9191-exec-1] service.EmployeeServiceImpl 31 - Employee Details Shown successfully!
