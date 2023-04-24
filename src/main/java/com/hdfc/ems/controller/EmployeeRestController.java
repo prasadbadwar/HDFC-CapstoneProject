@@ -12,7 +12,7 @@ import com.hdfc.ems.exception.EmpNotFound;
 import com.hdfc.ems.service.IEmployeeService;
 
 @RestController
-@RequestMapping("/ems")
+@RequestMapping("/hdfc/ems")
 public class EmployeeRestController {
 
 	@Autowired
