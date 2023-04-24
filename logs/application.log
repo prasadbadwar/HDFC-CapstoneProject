@@ -22,3 +22,5 @@
 22-04-2023 17:32:51 EmployeeServiceImpl.java INFO [https-jsse-nio-9191-exec-1] service.EmployeeServiceImpl 31 - Employee Details Shown successfully!
 22-04-2023 17:32:59 EmployeeRestController.java INFO [https-jsse-nio-9191-exec-8] controller.EmployeeRestController 25 - Getmapping called
 22-04-2023 17:32:59 EmployeeServiceImpl.java INFO [https-jsse-nio-9191-exec-8] service.EmployeeServiceImpl 31 - Employee Details Shown successfully!
+24-04-2023 10:03:05 EmployeeRestController.java INFO [https-jsse-nio-9191-exec-6] controller.EmployeeRestController 25 - Getmapping called
+24-04-2023 10:03:06 EmployeeServiceImpl.java INFO [https-jsse-nio-9191-exec-6] service.EmployeeServiceImpl 31 - Employee Details Shown successfully!
