@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.hdfc.ems.entity.Employee;
+import com.hdfc.ems.dto.EmployeeDTO;
 import com.hdfc.ems.exception.EmpNotFound;
 import com.hdfc.ems.service.IEmployeeService;
 
@@ -21,7 +21,7 @@ public class EmployeeRestController {
 	private static final Logger log=Logger.getLogger(EmployeeRestController.class);
 
 	@GetMapping("/findemployee/{id}")
-	public Employee getEmployee(@PathVariable long id) throws EmpNotFound {
+	public EmployeeDTO getEmployee(@PathVariable long id) throws EmpNotFound,Exception {
 		log.info("Getmapping called");
 		return service.getEmployee(id);
 	}
