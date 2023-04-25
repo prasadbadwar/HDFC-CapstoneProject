@@ -9,9 +9,11 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.hdfc.ems.dto.EmployeeDTO;
 import com.hdfc.ems.entity.Employee;
 import com.hdfc.ems.exception.EmpNotFound;
 import com.hdfc.ems.repository.IEmployeeRepository;
+import com.hdfc.ems.util.AESEncrypt;
 
 @Service
 public class EmployeeServiceImpl implements IEmployeeService {
@@ -22,13 +24,21 @@ public class EmployeeServiceImpl implements IEmployeeService {
 	private static final Logger log=Logger.getLogger(EmployeeServiceImpl.class);
 	
 	@Override
-	public Employee getEmployee(long id) throws EmpNotFound {
+	public EmployeeDTO getEmployee(long id) throws EmpNotFound,Exception {
+		Employee emp=emprepo.findById(id).orElse(null);
 		if(!emprepo.existsById(id)) {
 			log.error("Invalid EmployeeID");
 			throw new EmpNotFound(" Invalid EmployeeID");
 		}
 		log.info("Employee Details Shown successfully!");
-		return emprepo.findById(id).orElse(null);
+		return convertDTO(emp);
 	}
 
+	public EmployeeDTO convertDTO(Employee emp) throws Exception {
+		EmployeeDTO empdto=new EmployeeDTO();
+		empdto.setEmployeeId(emp.getEmployeeId());
+		empdto.setEmployeeName(emp.getEmployeeName());
+		empdto.setDateOfBirth(AESEncrypt.encrypt(emp.getDateOfBirth()));
+		return empdto;
+	}
 }

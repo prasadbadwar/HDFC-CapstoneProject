@@ -5,10 +5,10 @@
 *===========================*/
 package com.hdfc.ems.service;
 
-import com.hdfc.ems.entity.Employee;
+import com.hdfc.ems.dto.EmployeeDTO;
 import com.hdfc.ems.exception.EmpNotFound;
 
 public interface IEmployeeService {
 
-		public Employee getEmployee(long id) throws EmpNotFound;
+		public EmployeeDTO getEmployee(long id) throws EmpNotFound,Exception;
 }
