@@ -29,7 +29,7 @@ public class EmployeeDTO {
 	
 	private String employeeName;
 	
-	private LocalDate dateOfBirth;
+	private byte[] dateOfBirth;
 	
 	public long getEmployeeId() {
 		return employeeId;
@@ -48,12 +48,12 @@ public class EmployeeDTO {
 	}
 
 	public byte[] getDateOfBirth() throws EmpNotFound {
-		return AESEncrypt.encrypt(dateOfBirth);
+		return dateOfBirth;
 	
 		 
 	}
 
-	public void setDateOfBirth(LocalDate dateOfBirth) {
+	public void setDateOfBirth(byte[] dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
 
