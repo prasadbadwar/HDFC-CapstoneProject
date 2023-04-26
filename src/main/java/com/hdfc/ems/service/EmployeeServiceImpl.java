@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 import com.hdfc.ems.dto.EmployeeDTO;
 import com.hdfc.ems.entity.Employee;
-import com.hdfc.ems.exception.EmpNotFound;
+import com.hdfc.ems.exception.EmployeeNotFound;
 import com.hdfc.ems.repository.IEmployeeRepository;
 import com.hdfc.ems.util.AESEncrypt;
 
@@ -24,11 +24,11 @@ public class EmployeeServiceImpl implements IEmployeeService {
 	private static final Logger log=Logger.getLogger(EmployeeServiceImpl.class);
 	
 	@Override
-	public EmployeeDTO getEmployee(long id) throws EmpNotFound,Exception {
+	public EmployeeDTO getEmployee(long id) throws EmployeeNotFound,Exception {
 		Employee emp=emprepo.findById(id).orElse(null);
 		if(!emprepo.existsById(id)) {
 			log.error("Invalid EmployeeID");
-			throw new EmpNotFound(" Invalid EmployeeID");
+			throw new EmployeeNotFound(" Invalid EmployeeID");
 		}
 		log.info("Employee Details Shown successfully!");
 		return convertDTO(emp);
