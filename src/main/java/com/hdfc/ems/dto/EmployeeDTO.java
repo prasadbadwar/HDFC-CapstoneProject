@@ -8,17 +8,10 @@
   * */
 package com.hdfc.ems.dto;
 
-import java.time.LocalDate;
-
-import org.springframework.boot.autoconfigure.security.saml2.Saml2RelyingPartyProperties.Decryption;
-
-import com.hdfc.ems.exception.EmpNotFound;
-import com.hdfc.ems.util.AESEncrypt;
+import com.hdfc.ems.exception.EmployeeNotFound;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -47,7 +40,7 @@ public class EmployeeDTO {
 		this.employeeName = employeeName;
 	}
 
-	public byte[] getDateOfBirth() throws EmpNotFound {
+	public byte[] getDateOfBirth() throws EmployeeNotFound {
 		return dateOfBirth;
 	
 		 
