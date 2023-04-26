@@ -1,6 +1,8 @@
 package com.hdfc.ems.servicetest;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +20,9 @@ class EmployeeServiceImplTest {
 	IEmployeeService service;
 	@Test
 	void testGetEmployee() throws EmployeeNotFound,Exception {
-		EmployeeDTO emp=service.getEmployee(101);
+		EmployeeDTO emp=service.getEmployee(1021);
 		assertNotNull(emp);
 	}
+	
 
 }
