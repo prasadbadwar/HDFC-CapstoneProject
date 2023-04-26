@@ -1,3 +1,8 @@
+/* =========================
+@Author : Er.Prasad B.Badwar.
+@Date : 24/04/2023
+@Description : AESEncrypt is class build for encryption date of birth.
+*===========================*/
 package com.hdfc.ems.util;
 
 import java.nio.charset.StandardCharsets;
@@ -18,6 +23,18 @@ public class AESEncrypt {
         return cipher.doFinal(date.toString().getBytes(StandardCharsets.UTF_8));
     }
 	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 //	private static final String SECRET_KEY = "my_super_secret_key";
 //	private static final String SALT = "ssshhhhhhhhhhh!!!!";
 //	public static byte[] encrypt(LocalDate date) throws EmpNotFound {
