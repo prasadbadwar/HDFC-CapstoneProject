@@ -114,3 +114,20 @@
 26-04-2023 11:34:30 EmployeeServiceImpl.java INFO [https-jsse-nio-9191-exec-3] service.EmployeeServiceImpl 33 - Employee Details Shown successfully!
 26-04-2023 11:55:00 EmployeeRestController.java INFO [https-jsse-nio-9191-exec-9] controller.EmployeeRestController 25 - Getmapping called
 26-04-2023 11:55:00 EmployeeServiceImpl.java INFO [https-jsse-nio-9191-exec-9] service.EmployeeServiceImpl 33 - Employee Details Shown successfully!
+26-04-2023 19:00:48 EmployeeServiceImpl.java INFO [main] service.EmployeeServiceImpl 33 - Employee Details Shown successfully!
+26-04-2023 19:00:48 EmployeeServiceImpl.java ERROR [main] service.EmployeeServiceImpl 30 - Invalid EmployeeID
+26-04-2023 19:03:19 EmployeeServiceImpl.java INFO [main] service.EmployeeServiceImpl 33 - Employee Details Shown successfully!
+26-04-2023 19:06:16 EmployeeRestController.java INFO [https-jsse-nio-9191-exec-7] controller.EmployeeRestController 30 - Getmapping called
+26-04-2023 19:06:17 EmployeeServiceImpl.java ERROR [https-jsse-nio-9191-exec-7] service.EmployeeServiceImpl 30 - Invalid EmployeeID
+26-04-2023 19:06:34 EmployeeRestController.java INFO [https-jsse-nio-9191-exec-2] controller.EmployeeRestController 30 - Getmapping called
+26-04-2023 19:06:34 EmployeeServiceImpl.java INFO [https-jsse-nio-9191-exec-2] service.EmployeeServiceImpl 33 - Employee Details Shown successfully!
+26-04-2023 19:07:32 EmployeeRestController.java INFO [https-jsse-nio-9191-exec-9] controller.EmployeeRestController 30 - Getmapping called
+26-04-2023 19:07:32 EmployeeServiceImpl.java INFO [https-jsse-nio-9191-exec-9] service.EmployeeServiceImpl 33 - Employee Details Shown successfully!
+26-04-2023 19:07:55 EmployeeRestController.java INFO [https-jsse-nio-9191-exec-2] controller.EmployeeRestController 30 - Getmapping called
+26-04-2023 19:07:55 EmployeeServiceImpl.java INFO [https-jsse-nio-9191-exec-2] service.EmployeeServiceImpl 33 - Employee Details Shown successfully!
+26-04-2023 19:08:00 EmployeeRestController.java INFO [https-jsse-nio-9191-exec-3] controller.EmployeeRestController 30 - Getmapping called
+26-04-2023 19:08:00 EmployeeServiceImpl.java INFO [https-jsse-nio-9191-exec-3] service.EmployeeServiceImpl 33 - Employee Details Shown successfully!
+26-04-2023 19:09:16 EmployeeRestController.java INFO [https-jsse-nio-9191-exec-9] controller.EmployeeRestController 30 - Getmapping called
+26-04-2023 19:09:16 EmployeeServiceImpl.java INFO [https-jsse-nio-9191-exec-9] service.EmployeeServiceImpl 33 - Employee Details Shown successfully!
+26-04-2023 19:10:28 EmployeeRestController.java INFO [https-jsse-nio-9191-exec-7] controller.EmployeeRestController 30 - Getmapping called
+26-04-2023 19:10:28 EmployeeServiceImpl.java INFO [https-jsse-nio-9191-exec-7] service.EmployeeServiceImpl 33 - Employee Details Shown successfully!
