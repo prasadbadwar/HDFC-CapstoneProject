@@ -15,6 +15,8 @@ spec:
       containers:
         - name: hdfcems-k8s
           image: prasadbadwar/employee-management-system # Image that will be used to containers in the cluster
+          command: "sleep" 
+          args: "infinity"
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 9191 # The port that the container is running on in the cluster
