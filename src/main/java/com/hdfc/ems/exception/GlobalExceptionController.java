@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 public class GlobalExceptionController {
 	
-	@ExceptionHandler(EmpNotFound.class)
-	public ResponseEntity<String> handleBookExp(EmpNotFound e){
+	@ExceptionHandler(EmployeeNotFound.class)
+	public ResponseEntity<String> handleBookExp(EmployeeNotFound e){
 		return new ResponseEntity<>(e.getMessage(),HttpStatus.BAD_REQUEST);
 	}
 	
