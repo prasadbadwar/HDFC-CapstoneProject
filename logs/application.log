@@ -137,3 +137,15 @@
 26-04-2023 19:55:52 EmployeeServiceImpl.java INFO [https-jsse-nio-9191-exec-7] service.EmployeeServiceImpl 33 - Employee Details Shown successfully!
 26-04-2023 19:56:02 EmployeeRestController.java INFO [https-jsse-nio-9191-exec-8] controller.EmployeeRestController 30 - Getmapping called
 26-04-2023 19:56:02 EmployeeServiceImpl.java ERROR [https-jsse-nio-9191-exec-8] service.EmployeeServiceImpl 30 - Invalid EmployeeID
+27-04-2023 17:35:31 EmployeeRestController.java INFO [https-jsse-nio-9191-exec-8] controller.EmployeeRestController 30 - Getmapping called
+27-04-2023 17:35:31 EmployeeServiceImpl.java INFO [https-jsse-nio-9191-exec-8] service.EmployeeServiceImpl 33 - Employee Details Shown successfully!
+27-04-2023 17:35:52 EmployeeRestController.java INFO [https-jsse-nio-9191-exec-4] controller.EmployeeRestController 30 - Getmapping called
+27-04-2023 17:35:52 EmployeeServiceImpl.java INFO [https-jsse-nio-9191-exec-4] service.EmployeeServiceImpl 33 - Employee Details Shown successfully!
+27-04-2023 17:36:05 EmployeeRestController.java INFO [https-jsse-nio-9191-exec-6] controller.EmployeeRestController 30 - Getmapping called
+27-04-2023 17:36:05 EmployeeServiceImpl.java INFO [https-jsse-nio-9191-exec-6] service.EmployeeServiceImpl 33 - Employee Details Shown successfully!
+27-04-2023 17:36:13 EmployeeRestController.java INFO [https-jsse-nio-9191-exec-7] controller.EmployeeRestController 30 - Getmapping called
+27-04-2023 17:36:13 EmployeeServiceImpl.java ERROR [https-jsse-nio-9191-exec-7] service.EmployeeServiceImpl 30 - Invalid EmployeeID
+27-04-2023 17:36:32 EmployeeRestController.java INFO [https-jsse-nio-9191-exec-8] controller.EmployeeRestController 30 - Getmapping called
+27-04-2023 17:36:32 EmployeeServiceImpl.java ERROR [https-jsse-nio-9191-exec-8] service.EmployeeServiceImpl 30 - Invalid EmployeeID
+27-04-2023 17:38:15 EmployeeRestController.java INFO [https-jsse-nio-9191-exec-10] controller.EmployeeRestController 30 - Getmapping called
+27-04-2023 17:38:15 EmployeeServiceImpl.java INFO [https-jsse-nio-9191-exec-10] service.EmployeeServiceImpl 33 - Employee Details Shown successfully!
