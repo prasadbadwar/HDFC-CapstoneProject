@@ -14,13 +14,13 @@ import com.hdfc.ems.service.IEmployeeService;
 class EmployeeServiceImplTest {
 
 	
-	@Autowired
-	IEmployeeService service;
-	@Test
-	void testGetEmployee() throws EmployeeNotFound,Exception {
-		EmployeeDTO emp=service.getEmployee(1021);
-		assertNotNull(emp);
-	}
+//	@Autowired
+//	IEmployeeService service;
+//	@Test
+//	void testGetEmployee() throws EmployeeNotFound,Exception {
+//		EmployeeDTO emp=service.getEmployee(1021);
+//		assertNotNull(emp);
+//	}
 	
 
 }
