@@ -21,7 +21,7 @@ spec:
 
           env:    #for kubernetes pod running
             - name: DB_HOST   
-              value: postgres
+              value: postgresql
             - name: DB_NAME  
               value: employeedb           
             - name: DB_USERNAME  
