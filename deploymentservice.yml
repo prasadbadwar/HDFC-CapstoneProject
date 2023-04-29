@@ -19,15 +19,15 @@ spec:
           ports:
             - containerPort: 9191 # The port that the container is running on in the cluster
 
-          # env:    #for kubernetes pod running
-          #   - name: DB_HOST   
-          #     value: postgres
-          #   - name: DB_NAME  
-          #     value: employeedb           
-          #   - name: DB_USERNAME  
-          #     value: postgres              
-          #   - name: DB_PASSWORD 
-          #     value: root          
+          env:    #for kubernetes pod running
+            - name: DB_HOST   
+              value: postgres
+            - name: DB_NAME  
+              value: employeedb           
+            - name: DB_USERNAME  
+              value: postgres              
+            - name: DB_PASSWORD 
+              value: root          
 
 ---
 
