@@ -52,7 +52,7 @@ spec:
           volumeMounts:        # Mounting voulume obtained from Persistent Volume Claim
             - name: postgres-persistent-storage
               mountPath: /var/lib/postgresql/data #This is the path in the container on which the mounting will take place.
-              
+              subPath: postgres
       volumes:
         - name: postgres-persistent-storage # Obtaining 'vloume' from PVC
           persistentVolumeClaim:
