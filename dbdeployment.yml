@@ -43,7 +43,7 @@ spec:
             - name: POSTGRES_PASSWORD
               value: root
 
-            - name: PostgreSQL_DATABASE # Setting Database Name from a 'ConfigMap'
+            - name: POSTGRES_DATABASE # Setting Database Name from a 'ConfigMap'
               value: employeedb
           ports:
             - containerPort: 5432
