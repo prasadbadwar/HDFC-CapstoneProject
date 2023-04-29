@@ -36,21 +36,23 @@ spec:
     spec:
       containers:
         - image: postgres # image from docker-hub
-          args:
-            - "--ignore-db-dir=lost+found" # Workaround for https://github.com/docker-library/mysql/issues/186
+          # Workaround for https://github.com/docker-library/mysql/issues/186
           name: postgres
           env:
+            - name: POSTGRES_USER
+              value: postgres
             - name: POSTGRES_PASSWORD
               value: root
 
-            - name: POSTGRES_DATABASE # Setting Database Name from a 'ConfigMap'
+            - name: POSTGRES_DB # Setting Database Name from a 'ConfigMap'
               value: employeedb
           ports:
             - containerPort: 5432
               name: postgres
           volumeMounts:        # Mounting voulume obtained from Persistent Volume Claim
             - name: postgres-persistent-storage
-              mountPath: /var/lib/postgres #This is the path in the container on which the mounting will take place.
+              mountPath: /var/lib/postgresql/data #This is the path in the container on which the mounting will take place.
+              subPath: postgres  #for postgres subpath needs
       volumes:
         - name: postgres-persistent-storage # Obtaining 'vloume' from PVC
           persistentVolumeClaim:
@@ -60,7 +62,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: postgres  # DNS name
+  name: postgres-service  # DNS name
   labels:
     app: postgres
     tier: database
